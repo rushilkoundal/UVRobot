@@ -32,7 +32,7 @@ motorController.motorAction("STOPALL")
 screen.keypad(True)
 id=RFIDScanner.read_rfid()
 id=0
-print id
+print (id)
 os.system(' espeak -ven+f4 --stdout "Access Granted" | aplay') 
 time.sleep(2)
 last_time = time.time()
